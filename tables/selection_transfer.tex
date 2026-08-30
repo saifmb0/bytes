@@ -1,0 +1,12 @@
+\begin{tabular}{l r r r r r}
+\toprule
+selector ($k{=}5\%$) & Q0.5B & Q1.5B & Q3B & L3B & Q7B$^\dagger$ \\
+\midrule
+dense & 9.17 & 6.72 & 5.89 & 5.79 & 5.64 \\
+exact-key & 9.30 & 6.78 & 5.94 & 6.00 & 5.66 \\
+fp8 scalar & 9.29 & 6.78 & 5.94 & 6.00 & 5.64 \\
+PQ-LUT & 9.31 & 6.78 & 5.94 & 6.00 & 5.66 \\
+int4 scalar & 9.34 & 6.82 & 5.95 & 6.02 & 5.63 \\
+Quest (page) & 9.99 & 7.45 & 11.31 & 12.93 & 5.95 \\
+\bottomrule
+\end{tabular}

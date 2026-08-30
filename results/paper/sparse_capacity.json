@@ -1,0 +1,38 @@
+{
+  "16384": {
+    "BF16": {
+      "max_batch": 128,
+      "peak_mem_gb": 10.0
+    },
+    "FP8": {
+      "max_batch": 256,
+      "peak_mem_gb": 10.0
+    },
+    "KIVI-4": {
+      "max_batch": 256,
+      "peak_mem_gb": 15.77
+    },
+    "Sparse-INT2": {
+      "max_batch": 32,
+      "peak_mem_gb": 17.77
+    }
+  },
+  "32768": {
+    "BF16": {
+      "max_batch": 64,
+      "peak_mem_gb": 17.46
+    },
+    "FP8": {
+      "max_batch": 128,
+      "peak_mem_gb": 17.46
+    },
+    "KIVI-4": {
+      "max_batch": 128,
+      "peak_mem_gb": 16.13
+    },
+    "Sparse-INT2": {
+      "max_batch": 16,
+      "peak_mem_gb": 15.73
+    }
+  }
+}

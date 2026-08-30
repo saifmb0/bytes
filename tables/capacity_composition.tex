@@ -1,0 +1,21 @@
+\begin{tabular}{l r r}
+\toprule
+method & $S{=}16$K & $S{=}32$K \\
+\midrule
+BF16 & 128 & 64 \\
+FP8 & 256 & 128 \\
+KIVI-4 & 256 & 128 \\
+Sparse-INT2 & 32 & 16 \\
+\bottomrule
+\end{tabular}
+\hspace{1.4cm}
+\begin{tabular}{l r}
+\toprule
+selection / attend cache & PPL @ $k{=}5\%$ \\
+\midrule
+exact / bf16 & 9.30 \\
+exact / fp8 & 9.53 \\
+fp8 / bf16 & 9.29 \\
+fp8 / fp8 & 9.41 \\
+\bottomrule
+\end{tabular}

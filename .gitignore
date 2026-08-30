@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.antigravitycli/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+
+# Results (generated, not tracked)
+results/*
+!results/paper/
+!results/paper/*.json
+
+# External reproducibility dependencies; pin their revision in the manifest, do not vend them.
+third_party/

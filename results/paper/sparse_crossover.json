@@ -1,0 +1,502 @@
+[
+  {
+    "S": 4096,
+    "frac": 0.01,
+    "lat_ms": {
+      "bf16": 2.940078125,
+      "fp8": 2.318556213378906,
+      "kivi4": 2.4013046264648437,
+      "kivi2": 2.0026470947265627,
+      "sparse_bf16": 1.6194039916992187,
+      "sparse_fp8": 1.1424614715576171,
+      "sparse_int4": 4.239246826171875,
+      "sparse_int2": 2.461905975341797
+    },
+    "roofline": {
+      "score_pass_ms": 1.993624267578125,
+      "topk_only_ms": 0.31134719848632814,
+      "gather_only_ms": 0.09011712074279785
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 4096,
+    "frac": 0.02,
+    "lat_ms": {
+      "bf16": 2.9652481079101562,
+      "fp8": 2.403891143798828,
+      "kivi4": 2.4037989807128906,
+      "kivi2": 1.997178955078125,
+      "sparse_bf16": 1.734082489013672,
+      "sparse_fp8": 1.2623802947998046,
+      "sparse_int4": 4.375935974121094,
+      "sparse_int2": 2.5905255126953124
+    },
+    "roofline": {
+      "score_pass_ms": 2.018621063232422,
+      "topk_only_ms": 0.32268222808837893,
+      "gather_only_ms": 0.2641766357421875
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 4096,
+    "frac": 0.05,
+    "lat_ms": {
+      "bf16": 2.9755596923828125,
+      "fp8": 2.4129237365722656,
+      "kivi4": 2.407767028808594,
+      "kivi2": 1.9970918273925782,
+      "sparse_bf16": 2.1263462829589845,
+      "sparse_fp8": 1.6474726867675782,
+      "sparse_int4": 4.783022155761719,
+      "sparse_int2": 2.9912115478515626
+    },
+    "roofline": {
+      "score_pass_ms": 2.0192518615722657,
+      "topk_only_ms": 0.41321823120117185,
+      "gather_only_ms": 0.5860863876342773
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 4096,
+    "frac": 0.1,
+    "lat_ms": {
+      "bf16": 2.9839041137695315,
+      "fp8": 2.4247296142578123,
+      "kivi4": 2.4115087890625,
+      "kivi2": 2.0054518127441407,
+      "sparse_bf16": 2.566354064941406,
+      "sparse_fp8": 2.08450927734375,
+      "sparse_int4": 5.21723388671875,
+      "sparse_int2": 3.4316030883789064
+    },
+    "roofline": {
+      "score_pass_ms": 2.028159942626953,
+      "topk_only_ms": 0.4773817443847656,
+      "gather_only_ms": 1.0114867401123047
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 4096,
+    "frac": 0.25,
+    "lat_ms": {
+      "bf16": 3.0094219970703127,
+      "fp8": 2.4433305358886717,
+      "kivi4": 2.415091857910156,
+      "kivi2": 2.0003057861328126,
+      "sparse_bf16": 3.797626953125,
+      "sparse_fp8": 3.334000549316406,
+      "sparse_int4": 6.467901611328125,
+      "sparse_int2": 4.6902163696289065
+    },
+    "roofline": {
+      "score_pass_ms": 2.017453155517578,
+      "topk_only_ms": 0.6116403198242187,
+      "gather_only_ms": 2.2035148620605467
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 8192,
+    "frac": 0.01,
+    "lat_ms": {
+      "bf16": 6.141325073242188,
+      "fp8": 4.809686889648438,
+      "kivi4": 4.277722473144531,
+      "kivi2": 3.4371429443359376,
+      "sparse_bf16": 3.5685223388671874,
+      "sparse_fp8": 2.6987982177734375,
+      "sparse_int4": 8.906588134765625,
+      "sparse_int2": 5.5093145751953125
+    },
+    "roofline": {
+      "score_pass_ms": 4.1005465698242185,
+      "topk_only_ms": 1.2315081787109374,
+      "gather_only_ms": 0.2735103988647461
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 8192,
+    "frac": 0.02,
+    "lat_ms": {
+      "bf16": 6.159409790039063,
+      "fp8": 4.841348876953125,
+      "kivi4": 4.277437438964844,
+      "kivi2": 3.4324530029296874,
+      "sparse_bf16": 3.8955264282226563,
+      "sparse_fp8": 3.022840881347656,
+      "sparse_int4": 9.238292236328125,
+      "sparse_int2": 5.833856201171875
+    },
+    "roofline": {
+      "score_pass_ms": 4.120678405761719,
+      "topk_only_ms": 1.3174937438964844,
+      "gather_only_ms": 0.5151948928833008
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 8192,
+    "frac": 0.05,
+    "lat_ms": {
+      "bf16": 6.201118774414063,
+      "fp8": 4.86118408203125,
+      "kivi4": 4.278988647460937,
+      "kivi2": 3.43480224609375,
+      "sparse_bf16": 4.58156494140625,
+      "sparse_fp8": 3.7022463989257814,
+      "sparse_int4": 9.981701049804688,
+      "sparse_int2": 6.497090454101563
+    },
+    "roofline": {
+      "score_pass_ms": 4.144547729492188,
+      "topk_only_ms": 1.3540437316894531,
+      "gather_only_ms": 1.1786393737792968
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 8192,
+    "frac": 0.1,
+    "lat_ms": {
+      "bf16": 6.225100708007813,
+      "fp8": 4.89354248046875,
+      "kivi4": 4.280267944335938,
+      "kivi2": 3.432692565917969,
+      "sparse_bf16": 5.685452880859375,
+      "sparse_fp8": 4.810834045410156,
+      "sparse_int4": 11.098372802734374,
+      "sparse_int2": 7.571773681640625
+    },
+    "roofline": {
+      "score_pass_ms": 4.168584899902344,
+      "topk_only_ms": 1.415352325439453,
+      "gather_only_ms": 2.247658996582031
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 8192,
+    "frac": 0.25,
+    "lat_ms": {
+      "bf16": 6.239907836914062,
+      "fp8": 4.893695983886719,
+      "kivi4": 4.279725952148437,
+      "kivi2": 3.439042663574219,
+      "sparse_bf16": 9.15193359375,
+      "sparse_fp8": 8.309417114257812,
+      "sparse_int4": 14.588865966796876,
+      "sparse_int2": 11.02361572265625
+    },
+    "roofline": {
+      "score_pass_ms": 4.154912719726562,
+      "topk_only_ms": 1.6700160217285156,
+      "gather_only_ms": 5.4625482177734375
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 16384,
+    "frac": 0.01,
+    "lat_ms": {
+      "bf16": 12.5623095703125,
+      "fp8": 9.843834838867188,
+      "kivi4": 7.8057421875,
+      "kivi2": 6.087058715820312,
+      "sparse_bf16": 6.9494171142578125,
+      "sparse_fp8": 5.313734130859375,
+      "sparse_int4": 17.8377978515625,
+      "sparse_int2": 11.09782470703125
+    },
+    "roofline": {
+      "score_pass_ms": 8.3677490234375,
+      "topk_only_ms": 2.387645416259766,
+      "gather_only_ms": 0.5332992172241211
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 16384,
+    "frac": 0.02,
+    "lat_ms": {
+      "bf16": 12.5930859375,
+      "fp8": 9.872839965820312,
+      "kivi4": 7.798727416992188,
+      "kivi2": 6.06814208984375,
+      "sparse_bf16": 7.469869995117188,
+      "sparse_fp8": 5.820093383789063,
+      "sparse_int4": 18.33744873046875,
+      "sparse_int2": 11.570355224609376
+    },
+    "roofline": {
+      "score_pass_ms": 8.351155395507812,
+      "topk_only_ms": 2.4164547729492187,
+      "gather_only_ms": 1.0231995391845703
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 16384,
+    "frac": 0.05,
+    "lat_ms": {
+      "bf16": 12.632198486328125,
+      "fp8": 9.880042114257812,
+      "kivi4": 7.79736083984375,
+      "kivi2": 6.07553466796875,
+      "sparse_bf16": 8.942633056640625,
+      "sparse_fp8": 7.305742797851562,
+      "sparse_int4": 19.84647216796875,
+      "sparse_int2": 13.0062744140625
+    },
+    "roofline": {
+      "score_pass_ms": 8.379612426757813,
+      "topk_only_ms": 2.499414978027344,
+      "gather_only_ms": 2.47014404296875
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 16384,
+    "frac": 0.1,
+    "lat_ms": {
+      "bf16": 12.627945556640626,
+      "fp8": 9.8995458984375,
+      "kivi4": 7.78509765625,
+      "kivi2": 6.069144287109375,
+      "sparse_bf16": 11.493651123046876,
+      "sparse_fp8": 9.860029296875,
+      "sparse_int4": 22.42142578125,
+      "sparse_int2": 15.47033447265625
+    },
+    "roofline": {
+      "score_pass_ms": 8.388049926757812,
+      "topk_only_ms": 2.677118835449219,
+      "gather_only_ms": 4.8926260375976565
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 16384,
+    "frac": 0.25,
+    "lat_ms": {
+      "bf16": 12.626893310546874,
+      "fp8": 9.900328979492187,
+      "kivi4": 7.791158447265625,
+      "kivi2": 6.066463012695312,
+      "sparse_bf16": 19.39135986328125,
+      "sparse_fp8": 17.769912109375,
+      "sparse_int4": 30.37919189453125,
+      "sparse_int2": 23.2066162109375
+    },
+    "roofline": {
+      "score_pass_ms": 8.372024536132812,
+      "topk_only_ms": 3.224462890625,
+      "gather_only_ms": 12.14226318359375
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 32768,
+    "frac": 0.01,
+    "lat_ms": {
+      "bf16": 25.7692431640625,
+      "fp8": 19.8789013671875,
+      "kivi4": 14.655728759765625,
+      "kivi2": 11.19552978515625,
+      "sparse_bf16": 13.569925537109375,
+      "sparse_fp8": 10.348953857421876,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 32768,
+    "frac": 0.02,
+    "lat_ms": {
+      "bf16": 25.972900390625,
+      "fp8": 19.917684326171877,
+      "kivi4": 14.6687158203125,
+      "kivi2": 11.15252685546875,
+      "sparse_bf16": 14.637066650390626,
+      "sparse_fp8": 11.3977587890625,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 32768,
+    "frac": 0.05,
+    "lat_ms": {
+      "bf16": 26.0144873046875,
+      "fp8": 19.9344189453125,
+      "kivi4": 14.67147216796875,
+      "kivi2": 11.154774169921875,
+      "sparse_bf16": 17.8036767578125,
+      "sparse_fp8": 14.60336181640625,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 32768,
+    "frac": 0.1,
+    "lat_ms": {
+      "bf16": 25.964970703125,
+      "fp8": 19.92651123046875,
+      "kivi4": 14.698941650390625,
+      "kivi2": 11.15040771484375,
+      "sparse_bf16": 23.395615234375,
+      "sparse_fp8": 20.21086669921875,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 32768,
+    "frac": 0.25,
+    "lat_ms": {
+      "bf16": 26.023212890625,
+      "fp8": 19.914337158203125,
+      "kivi4": 14.728125,
+      "kivi2": 11.18205810546875,
+      "sparse_bf16": 49.8610595703125,
+      "sparse_fp8": 46.705654296875,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "kivi2"
+  },
+  {
+    "S": 65536,
+    "frac": 0.01,
+    "lat_ms": {
+      "bf16": 53.1108935546875,
+      "fp8": NaN,
+      "kivi4": NaN,
+      "kivi2": NaN,
+      "sparse_bf16": 26.92527587890625,
+      "sparse_fp8": 20.371295166015624,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "sparse_fp8"
+  },
+  {
+    "S": 65536,
+    "frac": 0.02,
+    "lat_ms": {
+      "bf16": NaN,
+      "fp8": NaN,
+      "kivi4": NaN,
+      "kivi2": NaN,
+      "sparse_bf16": NaN,
+      "sparse_fp8": NaN,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "None"
+  },
+  {
+    "S": 65536,
+    "frac": 0.05,
+    "lat_ms": {
+      "bf16": NaN,
+      "fp8": NaN,
+      "kivi4": NaN,
+      "kivi2": NaN,
+      "sparse_bf16": NaN,
+      "sparse_fp8": NaN,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "None"
+  },
+  {
+    "S": 65536,
+    "frac": 0.1,
+    "lat_ms": {
+      "bf16": NaN,
+      "fp8": NaN,
+      "kivi4": NaN,
+      "kivi2": NaN,
+      "sparse_bf16": NaN,
+      "sparse_fp8": NaN,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "None"
+  },
+  {
+    "S": 65536,
+    "frac": 0.25,
+    "lat_ms": {
+      "bf16": NaN,
+      "fp8": NaN,
+      "kivi4": NaN,
+      "kivi2": NaN,
+      "sparse_bf16": NaN,
+      "sparse_fp8": NaN,
+      "sparse_int4": NaN,
+      "sparse_int2": NaN
+    },
+    "roofline": {
+      "score_pass_ms": NaN,
+      "topk_only_ms": NaN,
+      "gather_only_ms": NaN
+    },
+    "winner": "None"
+  }
+]

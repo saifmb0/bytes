@@ -1,0 +1,65 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "ctx": 16384,
+  "eval_window": 512,
+  "n_windows": 2,
+  "page": 16,
+  "local_w": 32,
+  "dataset": "wikitext2",
+  "score_dtype": "fp32",
+  "attend_mode": "bf16",
+  "load_4bit": false,
+  "diagnose_scores": true,
+  "seed": 0,
+  "fracs": [
+    0.1
+  ],
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "dataset_fingerprint": "7ccd6deaa4fc56e5",
+  "grid": {
+    "exact_k0.1": 9.114347629176006
+  },
+  "windows": {
+    "dense": [
+      7.40585701294664,
+      11.117773203019865
+    ],
+    "exact_k0.1": [
+      7.427043805408174,
+      11.184979499511766
+    ]
+  },
+  "dense_ppl": 9.073953859477957,
+  "losses": {
+    "dense": [
+      2.0022711753845215,
+      2.4085450172424316
+    ],
+    "exact_k0.1": [
+      2.0051279067993164,
+      2.414571762084961
+    ]
+  },
+  "confidence_intervals": {
+    "dense": [
+      7.40585701294664,
+      11.117773203019865
+    ],
+    "exact_k0.1": [
+      7.427043805408174,
+      11.184979499511766
+    ]
+  },
+  "score_diagnostics": {
+    "score_tiles": 15360,
+    "topk_calls": 0,
+    "topk_items": 0,
+    "topk_matches": 0,
+    "nonfinite_scores": 0,
+    "max_abs_q": 80.5,
+    "max_abs_k": 221.0,
+    "max_abs_element_product": 8470.0,
+    "max_abs_score": 1929.0933837890625,
+    "topk_agreement_with_fp32": null
+  }
+}

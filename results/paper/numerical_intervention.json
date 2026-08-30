@@ -1,0 +1,122 @@
+{
+  "schema": "numerical_intervention_v1",
+  "claim_scope": "selection-only key-channel clipping; exact post-selection attention fixed",
+  "model": "Qwen/Qwen2.5-1.5B",
+  "ctx": 16384,
+  "n_windows": 2,
+  "selector": "exact",
+  "frac": 0.1,
+  "local_w": 32,
+  "records": [
+    {
+      "score_dtype": "fp32",
+      "score_key_clip": null,
+      "raw_file": "results/paper/numerical_intervention_runs/fp32_noclip.json",
+      "ppl": 6.733350745666426,
+      "losses": [
+        1.6984384059906006,
+        2.1157073974609375
+      ],
+      "score_diagnostics": {
+        "score_tiles": 17920,
+        "topk_calls": 0,
+        "topk_items": 0,
+        "topk_matches": 0,
+        "nonfinite_scores": 0,
+        "max_abs_q": 104.0,
+        "max_abs_k": 326.0,
+        "max_abs_element_product": 30481.0,
+        "max_abs_score": 24336.650390625,
+        "topk_agreement_with_fp32": null
+      }
+    },
+    {
+      "score_dtype": "bf16",
+      "score_key_clip": null,
+      "raw_file": "results/paper/numerical_intervention_runs/bf16_noclip.json",
+      "ppl": 8.014485151380766,
+      "losses": [
+        1.8760497570037842,
+        2.2864513397216797
+      ],
+      "score_diagnostics": {
+        "score_tiles": 17920,
+        "topk_calls": 7168,
+        "topk_items": 18034458624,
+        "topk_matches": 17863462238,
+        "nonfinite_scores": 0,
+        "max_abs_q": 104.0,
+        "max_abs_k": 326.0,
+        "max_abs_element_product": 30481.0,
+        "max_abs_score": 24320.0,
+        "topk_agreement_with_fp32": 0.9905183521410262
+      }
+    },
+    {
+      "score_dtype": "bf16",
+      "score_key_clip": 256.0,
+      "raw_file": "results/paper/numerical_intervention_runs/bf16_clip256.json",
+      "ppl": 7.863516709303208,
+      "losses": [
+        1.8703227043151855,
+        2.2541451454162598
+      ],
+      "score_diagnostics": {
+        "score_tiles": 17920,
+        "topk_calls": 7168,
+        "topk_items": 18034458624,
+        "topk_matches": 17866452139,
+        "nonfinite_scores": 0,
+        "max_abs_q": 104.0,
+        "max_abs_k": 256.0,
+        "max_abs_element_product": 26104.0,
+        "max_abs_score": 23168.0,
+        "topk_agreement_with_fp32": 0.9906841403724523
+      }
+    },
+    {
+      "score_dtype": "bf16",
+      "score_key_clip": 128.0,
+      "raw_file": "results/paper/numerical_intervention_runs/bf16_clip128.json",
+      "ppl": 8.074076616228036,
+      "losses": [
+        1.8806856870651245,
+        2.296631336212158
+      ],
+      "score_diagnostics": {
+        "score_tiles": 17920,
+        "topk_calls": 7168,
+        "topk_items": 18034458624,
+        "topk_matches": 17885149903,
+        "nonfinite_scores": 0,
+        "max_abs_q": 104.0,
+        "max_abs_k": 128.0,
+        "max_abs_element_product": 13312.0,
+        "max_abs_score": 14912.0,
+        "topk_agreement_with_fp32": 0.9917209202608775
+      }
+    },
+    {
+      "score_dtype": "bf16",
+      "score_key_clip": 64.0,
+      "raw_file": "results/paper/numerical_intervention_runs/bf16_clip64.json",
+      "ppl": 7.908588295910243,
+      "losses": [
+        1.87929105758667,
+        2.2566075325012207
+      ],
+      "score_diagnostics": {
+        "score_tiles": 17920,
+        "topk_calls": 7168,
+        "topk_items": 18034458624,
+        "topk_matches": 17913304340,
+        "nonfinite_scores": 0,
+        "max_abs_q": 104.0,
+        "max_abs_k": 64.0,
+        "max_abs_element_product": 6656.0,
+        "max_abs_score": 8192.0,
+        "topk_agreement_with_fp32": 0.9932820670403286
+      }
+    }
+  ]
+}

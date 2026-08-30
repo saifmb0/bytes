@@ -1,0 +1,13 @@
+\begin{tabular}{l r}
+\toprule
+method & decode latency (ms) \\
+\midrule
+KIVI-2 & 6.07 \\
+two-pass sparse (fp8, $k{=}5\%$) & 7.31 \\
+KIVI-4 & 7.78 \\
+FP8 dense & 9.88 \\
+BF16 dense & 12.63 \\
+two-pass sparse (int2 score, $k{=}5\%$) & 13.01 \\
+two-pass sparse (int4 score, $k{=}5\%$) & 19.85 \\
+\bottomrule
+\end{tabular}

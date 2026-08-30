@@ -1,0 +1,357 @@
+% ===================================================================
+% KV Cache Quantization
+% ===================================================================
+
+@inproceedings{liu2024kivi,
+  title={{KIVI}: A Tuning-Free Asymmetric 2bit Quantization for {KV} Cache},
+  author={Liu, Zirui and Yuan, Jiayi and Jin, Hongye and Zhong, Shaochen and Xu, Zhaozhuo and Braverman, Vladimir and Chen, Beidi and Hu, Xia},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  pages={32332--32344},
+  year={2024},
+  publisher={PMLR},
+  volume={235},
+  url={https://arxiv.org/abs/2402.02750}
+}
+
+@inproceedings{hooper2024kvquant,
+  title={{KVQuant}: Towards 10 Million Context Length {LLM} Inference with {KV} Cache Quantization},
+  author={Hooper, Coleman and Kim, Sehoon and Mohammadzadeh, Hiva and Mahoney, Michael W. and Shao, Yakun Sophia and Keutzer, Kurt and Gholami, Amir},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2024},
+  url={https://arxiv.org/abs/2401.18079}
+}
+
+@inproceedings{zhao2024atom,
+  title={Atom: Low-Bit Quantization for Efficient and Accurate {LLM} Serving},
+  author={Zhao, Yilong and Lin, Chien-Yu and Zhu, Kan and Ye, Zihao and Chen, Lequn and Zheng, Size and Ceze, Luis and Krishnamurthy, Arvind and Chen, Tianqi and Kasikci, Baris},
+  booktitle={Proceedings of Machine Learning and Systems (MLSys)},
+  year={2024}
+}
+
+@inproceedings{lin2025qserve,
+  title={{QServe}: {W4A8KV4} Quantization and System Co-design for Efficient {LLM} Serving},
+  author={Lin, Yujun and Tang, Haotian and Yang, Shang and Zhang, Zhekai and Xiao, Guangxuan and Gan, Chuang and Han, Song},
+  booktitle={Proceedings of Machine Learning and Systems (MLSys)},
+  year={2025}
+}
+
+% ===================================================================
+% Product Quantization / Lookup Table Attention
+% ===================================================================
+
+@article{jegou2011product,
+  title={Product Quantization for Nearest Neighbor Search},
+  author={J{\'e}gou, Herv{\'e} and Douze, Matthijs and Schmid, Cordelia},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={33},
+  number={1},
+  pages={117--128},
+  year={2011},
+  publisher={IEEE}
+}
+
+@article{karmore2026lookat,
+  title={{LOOKAT}: Lookup-Optimized Key-Attention for Memory-Efficient Transformers},
+  author={Karmore, Aryan},
+  journal={arXiv preprint arXiv:2601.10155},
+  year={2026}
+}
+
+@inproceedings{egiazarian2024aqlm,
+  title={Extreme Compression of Large Language Models via Additive Quantization},
+  author={Egiazarian, Vage and Panferov, Andrei and Kuznedelev, Denis and Frantar, Elias and Babenko, Artem and Alistarh, Dan},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year={2024},
+  publisher={PMLR},
+  volume={235}
+}
+
+% ===================================================================
+% Rotation-Based Quantization
+% ===================================================================
+
+@inproceedings{ashkboos2024quarot,
+  title={{QuaRot}: Outlier-Free 4-Bit Inference in Rotated {LLMs}},
+  author={Ashkboos, Saleh and Mohtashami, Amirkeivan and Croci, Maximilian L. and Li, Bo and Cameron, Pashmina and Jaggi, Martin and Alistarh, Dan and Hoefler, Torsten and Hensman, James},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2024}
+}
+
+@inproceedings{chee2023quip,
+  title={{QuIP}: 2-Bit Quantization of Large Language Models With Guarantees},
+  author={Chee, Jerry and Cai, Yaohui and Kuleshov, Volodymyr and De Sa, Christopher M.},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2023}
+}
+
+@inproceedings{tseng2024quipsharp,
+  title={{QuIP\#}: Even Better {LLM} Quantization with {Hadamard} Incoherence and Lattice Codebooks},
+  author={Tseng, Albert and Chee, Jerry and Sun, Qingyao and Kuleshov, Volodymyr and De Sa, Christopher},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  pages={48630--48656},
+  year={2024},
+  publisher={PMLR},
+  volume={235}
+}
+
+@inproceedings{liu2025spinquant,
+  title={{SpinQuant}: {LLM} Quantization with Learned Rotations},
+  author={Liu, Zechun and Zhao, Changsheng and Fedorov, Igor and Soran, Bilge and Choudhary, Dhruv and Krishnamoorthi, Raghuraman and Chandra, Vikas and Tian, Yuandong and Blankevoort, Tijmen},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2025}
+}
+
+% ===================================================================
+% TurboQuant and QJL
+% ===================================================================
+
+@inproceedings{zandieh2026turboquant,
+  title={{TurboQuant}: Online Vector Quantization with Near-optimal Distortion Rate},
+  author={Zandieh, Amir and Daliri, Majid and Hadian, Majid and Mirrokni, Vahab},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2026}
+}
+
+@inproceedings{zandieh2025qjl,
+  title={{QJL}: 1-Bit Quantized {JL} Transform for {KV} Cache Quantization with Zero Overhead},
+  author={Zandieh, Amir and Daliri, Majid and Han, Insu},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2025}
+}
+
+@incollection{johnson1984extensions,
+  title={Extensions of {Lipschitz} Mappings into a {Hilbert} Space},
+  author={Johnson, William B. and Lindenstrauss, Joram},
+  booktitle={Conference in Modern Analysis and Probability (Contemporary Mathematics)},
+  volume={26},
+  pages={189--206},
+  year={1984},
+  publisher={American Mathematical Society}
+}
+
+% ===================================================================
+% Outlier Handling
+% ===================================================================
+
+@inproceedings{xiao2023smoothquant,
+  title={{SmoothQuant}: Accurate and Efficient Post-Training Quantization for Large Language Models},
+  author={Xiao, Guangxuan and Lin, Ji and Seznec, Mickael and Wu, Hao and Demouth, Julien and Han, Song},
+  booktitle={Proceedings of the 40th International Conference on Machine Learning (ICML)},
+  year={2023},
+  publisher={PMLR},
+  volume={202}
+}
+
+@inproceedings{dettmers2022llmint8,
+  title={{LLM.int8()}: 8-bit Matrix Multiplication for Transformers at Scale},
+  author={Dettmers, Tim and Lewis, Mike and Belkada, Younes and Zettlemoyer, Luke},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2022}
+}
+
+% ===================================================================
+% Efficient Attention and Serving
+% ===================================================================
+
+@inproceedings{dao2022flashattention,
+  title={{FlashAttention}: Fast and Memory-Efficient Exact Attention with {IO}-Awareness},
+  author={Dao, Tri and Fu, Daniel Y. and Ermon, Stefano and Rudra, Atri and R{\'e}, Christopher},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2022}
+}
+
+@inproceedings{dao2024flashattention2,
+  title={{FlashAttention-2}: Faster Attention with Better Parallelism and Work Partitioning},
+  author={Dao, Tri},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024}
+}
+
+@inproceedings{shah2024flashattention3,
+  title={{FlashAttention-3}: Fast and Accurate Attention with Asynchrony and Low-precision},
+  author={Shah, Jay and Bikshandi, Ganesh and Zhang, Ying and Thakkar, Vijay and Ramani, Pradeep and Dao, Tri},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2024}
+}
+
+@inproceedings{kwon2023vllm,
+  title={Efficient Memory Management for Large Language Model Serving with {PagedAttention}},
+  author={Kwon, Woosuk and Li, Zhuohan and Zhuang, Siyuan and Sheng, Ying and Zheng, Lianmin and Yu, Cody Hao and Gonzalez, Joseph and Zhang, Hao and Stoica, Ion},
+  booktitle={Proceedings of the 29th Symposium on Operating Systems Principles (SOSP)},
+  year={2023}
+}
+
+% ===================================================================
+% General Post-Training Quantization
+% ===================================================================
+
+@inproceedings{frantar2023gptq,
+  title={{GPTQ}: Accurate Post-Training Quantization for Generative Pre-trained Transformers},
+  author={Frantar, Elias and Ashkboos, Saleh and Hoefler, Torsten and Alistarh, Dan},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2023}
+}
+
+@inproceedings{lin2024awq,
+  title={{AWQ}: Activation-aware Weight Quantization for {LLM} Compression and Acceleration},
+  author={Lin, Ji and Tang, Jiaming and Tang, Haotian and Yang, Shang and Chen, Wei-Ming and Wang, Wei-Chen and Xiao, Guangxuan and Dang, Xingyu and Gan, Chuang and Han, Song},
+  booktitle={Proceedings of Machine Learning and Systems (MLSys)},
+  year={2024}
+}
+
+@inproceedings{shao2024omniquant,
+  title={{OmniQuant}: Omnidirectionally Calibrated Quantization for Large Language Models},
+  author={Shao, Wenqi and Chen, Mengzhao and Zhang, Zhaoyang and Xu, Peng and Zhao, Lirui and Li, Zhiqian and Zhang, Kaipeng and Gao, Peng and Qiao, Yu and Luo, Ping},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024}
+}
+
+% ===================================================================
+% Foundational / Models
+% ===================================================================
+
+@article{vaswani2017attention,
+  title={Attention Is All You Need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2017}
+}
+
+@misc{tillet2019triton,
+  title={Triton: An Intermediate Language and Compiler for Tiled Neural Network Computations},
+  author={Tillet, Philippe and Kung, H.T. and Cox, David},
+  howpublished={Proceedings of the 3rd ACM SIGPLAN International Workshop on Machine Learning and Programming Languages},
+  year={2019}
+}
+
+@article{ainslie2023gqa,
+  title={GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints},
+  author={Ainslie, Joshua and Lee-Thorp, James and de Jong, Michiel and Zemlyanskiy, Yury and Lebr{\'o}n, Federico and Sanghai, Sumit},
+  journal={arXiv preprint arXiv:2305.13245},
+  year={2023}
+}
+
+@inproceedings{tang2024quest,
+  title={{QUEST}: Query-Aware Sparsity for Efficient Long-Context {LLM} Inference},
+  author={Tang, Jiaming and Zhao, Yilong and Zhu, Kan and Xiao, Guangxuan and Kasikci, Baris and Han, Song},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year={2024},
+  url={https://proceedings.mlr.press/v235/tang24l.html}
+}
+
+@inproceedings{zhang2023h2o,
+  title={H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models},
+  author={Zhang, Zhenyu and Sheng, Ying and Zhou, Tianyi and Chen, Tianlong and Zheng, Lianmin and Cai, Ruisi and Song, Zhao and Tian, Yuandong and R{\'e}, Christopher and Barrett, Clark and Wang, Zhangyang and Chen, Beidi},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2023},
+  url={https://arxiv.org/abs/2306.14048}
+}
+
+@inproceedings{li2024snapkv,
+  title={SnapKV: LLM Knows What You are Looking for Before Generation},
+  author={Li, Yuhong and Huang, Yingbing and Yang, Bowen and Venkitesh, Bharat and Locatelli, Acyr and Ye, Hanchen and Cai, Tianle and Lewis, Patrick and Chen, Deming},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2024},
+  url={https://arxiv.org/abs/2404.14469}
+}
+
+@inproceedings{ribar2024sparq,
+  title={SparQ Attention: Bandwidth-Efficient LLM Inference},
+  author={Ribar, Luka and Chelombiev, Ivan and Hudlass-Galley, Luke and Blake, Charlie and Luschi, Carlo and Orr, Douglas},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year={2024},
+  url={https://arxiv.org/abs/2312.04985}
+}
+
+@article{zhang2025pqcache,
+  title={PQCache: Product Quantization-based KVCache for Long Context LLM Inference},
+  author={Zhang, Hailin and Ji, Xiaodong and Chen, Yilin and Fu, Fangcheng and Miao, Xupeng and Nie, Xiaonan and Chen, Weipeng and Cui, Bin},
+  journal={Proceedings of the ACM on Management of Data (SIGMOD)},
+  year={2025},
+  doi={10.1145/3725338}
+}
+
+@inproceedings{yang2026selfindexing,
+  title={Self-Indexing KVCache: Predicting Sparse Attention from Compressed Keys},
+  author={Yang, Xu and Zhang, Jiapeng and Zhao, Dongyang and Chen, Guo and Tang, Zhuo},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
+  year={2026},
+  doi={10.1609/aaai.v40i33.39988}
+}
+
+@inproceedings{wei2025rethinking,
+  title={Rethinking Key-Value Cache Compression Techniques for Large Language Model Serving},
+  author={Gao, Wei and Zhou, Xinyu and Sun, Peng and Zhang, Tianwei and Wen, Yonggang},
+  booktitle={Proceedings of Machine Learning and Systems (MLSys)},
+  volume={7},
+  year={2025},
+  url={https://arxiv.org/abs/2503.24000}
+}
+
+@inproceedings{zhang2024qhitter,
+  title={{Q-Hitter}: A Better Token Oracle for Efficient {LLM} Inference via Sparse-Quantized {KV} Cache},
+  author={Zhang, Zhenyu and Liu, Shiwei and Chen, Runjin and Kailkhura, Bhavya and Chen, Beidi and Wang, Zhangyang},
+  booktitle={Proceedings of Machine Learning and Systems (MLSys)},
+  volume={6},
+  year={2024},
+  url={https://proceedings.mlsys.org/paper_files/paper/2024/hash/bbb7506579431a85861a05fff048d3e1-Abstract-Conference.html}
+}
+
+@inproceedings{wu2025tokenselect,
+  title={{TokenSelect}: Efficient Long-Context Inference and Length Extrapolation for {LLM}s via Dynamic Token-Level {KV} Cache Selection},
+  author={Wu, Wei and Pan, Zhuoshi and Fu, Kun and Wang, Chao and Chen, Liyi and Bai, Yunchu and Wang, Tianfu and Wang, Zheng and Xiong, Hui},
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages={21264--21281},
+  year={2025},
+  doi={10.18653/v1/2025.emnlp-main.1079}
+}
+
+@inproceedings{chen2025magicpig,
+  title={{MagicPIG}: {LSH} Sampling for Efficient {LLM} Generation},
+  author={Chen, Zhuoming and Sadhukhan, Ranajoy and Ye, Zihao and Zhou, Yang and Zhang, Jianyu and Nolte, Niklas and Tian, Yuandong and Douze, Matthijs and Bottou, Leon and Jia, Zhihao and Chen, Beidi},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2025},
+  url={https://arxiv.org/abs/2410.16179}
+}
+
+@inproceedings{li2025scbench,
+  title={{SCBench}: A {KV} Cache-Centric Analysis of Long-Context Methods},
+  author={Li, Yucheng and Jiang, Huiqiang and Wu, Qianhui and Luo, Xufang and Ahn, Surin and Zhang, Chengruidong and Abdi, Amir H. and Li, Dongsheng and Gao, Jianfeng and Yang, Yuqing and Qiu, Lili},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2025},
+  url={https://arxiv.org/abs/2412.10319}
+}
+
+@inproceedings{yuan2024longctx,
+  title={{KV} Cache Compression, But What Must We Give in Return? A Comprehensive Benchmark of Long Context Capable Approaches},
+  author={Yuan, Jiayi and Liu, Hongyi and Zhong, Shaochen and Chuang, Yu-Neng and Li, Songchen and Wang, Guanchu and Le, Duy and Jin, Hongye and Chaudhary, Vipin and Xu, Zhaozhuo and Liu, Zirui and Hu, Xia},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2024},
+  pages={4623--4648},
+  year={2024},
+  doi={10.18653/v1/2024.findings-emnlp.266}
+}
+
+@inproceedings{li2025kvtuner,
+  title={{KVTuner}: Sensitivity-Aware Layer-Wise Mixed-Precision {KV} Cache Quantization for Efficient and Nearly Lossless {LLM} Inference},
+  author={Li, Xing and Xing, Zeyu and Li, Yiming and Qu, Linping and Zhen, Hui-Ling and Liu, Wulong and Yao, Yiwu and Pan, Sinno Jialin and Yuan, Mingxuan},
+  booktitle={Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  year={2025},
+  url={https://arxiv.org/abs/2502.04420}
+}
+
+@inproceedings{yang2025lserve,
+  title={{LServe}: Efficient Long-Sequence {LLM} Serving with Unified Sparse Attention},
+  author={Yang, Shang and Guo, Junxian and Tang, Haotian and Hu, Qinghao and Xiao, Guangxuan and Tang, Jiaming and Lin, Yujun and Liu, Zhijian and Lu, Yao and Han, Song},
+  booktitle={Proceedings of Machine Learning and Systems (MLSys)},
+  volume={7},
+  year={2025},
+  url={https://arxiv.org/abs/2502.14866}
+}
+
+@article{agrawal2026benchmarking,
+  title={Benchmarking {KV}-Cache Optimizations across Task Quality and System Performance for Long-Context Serving},
+  author={Agrawal, Nikita and Mayer, Ruben},
+  journal={arXiv preprint arXiv:2607.05399},
+  year={2026},
+  url={https://arxiv.org/abs/2607.05399}
+}

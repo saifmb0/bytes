@@ -1,0 +1,563 @@
+{
+  "schema_version": 1,
+  "git_revision": "c930c862defdc6e84799de6d09806bec8847e44b",
+  "git_dirty": true,
+  "git_status_sha256": "2345cea7315e32cc4ed906f6a7cd6e12482706e06ecf83761511702316408b85",
+  "python": "3.12.2",
+  "platform": "Linux-6.17.0-1017-oem-x86_64-with-glibc2.39",
+  "torch": "2.11.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA RTX 4000 Ada Generation",
+  "transformers": "5.9.0",
+  "datasets": "4.8.4",
+  "triton": "3.6.0",
+  "evidence": [
+    {
+      "file": "ablation_value_cache.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": null,
+      "sha256": "fb15cc69b584cb7a65d047152f169d5c42c10e99add2782f72a0df8eff0992b9"
+    },
+    {
+      "file": "access_pattern.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": null,
+      "sha256": "952bc3fa3f5c0980be561481c7300978c815057c83a02311d9b8106dd9a2ce92"
+    },
+    {
+      "file": "compose_exact_bf16.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "324ace941c010aba8bc1a92e2f777cecd701381813f90c52d60fc6de23707cd9"
+    },
+    {
+      "file": "compose_exact_fp8.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "641329d366d971d1911f5825f98522f0f343582df9b39297a907a4838480863e"
+    },
+    {
+      "file": "compose_fp8_bf16.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "49bf0e1b18a94d5bc03829444d6f211f0cea6a114d8d3918f037cecd7a3ae51c"
+    },
+    {
+      "file": "compose_fp8_fp8.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "2939ad574dbf9eabc312793a596dc538f8ef8f80e875ef1e8b6b1d49ebc6048a"
+    },
+    {
+      "file": "compression_comparison.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": null,
+      "sha256": "f375a4982226d46beee8fcb5d37481229ee75252ca90fc80bee89017294181a5"
+    },
+    {
+      "file": "compression_fp8_seed0.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 0,
+      "sha256": "5bd1e95b2d4be9f8a5c82bd494b019bce336cc30ec3b65dbe123fc71ae0fb337"
+    },
+    {
+      "file": "compression_fp8_seed1.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 1,
+      "sha256": "e5453b0b80e15415e6d9fb2f66657ede709048e689eb206a32405dd3012d2f92"
+    },
+    {
+      "file": "compression_fp8_seed2.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 2,
+      "sha256": "181685e19227d55b4a58630f112fde62dc16703c68d1a4520998a725003a0212"
+    },
+    {
+      "file": "compression_fp8_seed3.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 3,
+      "sha256": "3444a570a4a45d98f3f104e63f247a1c32824f0faf9294875e72bcb312ae6480"
+    },
+    {
+      "file": "compression_fp8_seed4.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 4,
+      "sha256": "952ee32a8e5b8c53f60a0be10e98506fed64043ff4bd1e00e6c95d4b8e5adcd9"
+    },
+    {
+      "file": "compression_pq_seed0.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 0,
+      "sha256": "6f4917cb7de77de604dbdc06cece7fb11bcdacd2d0e3f19b2729e1a8e5218a05"
+    },
+    {
+      "file": "compression_pq_seed1.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 1,
+      "sha256": "ec59a5bc56616dab954a24cca17b4383e2aefc6e32337d98fbd7d1fe73391c2a"
+    },
+    {
+      "file": "compression_pq_seed2.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 2,
+      "sha256": "34bdcd1f2979cd21b959f920baf687608bff2e92623537a172bac71c4217e068"
+    },
+    {
+      "file": "compression_pq_seed3.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 3,
+      "sha256": "096a302018a2745fcdbd2a9ef16e3bacfa594f2881474fae402ac15e61846916"
+    },
+    {
+      "file": "compression_pq_seed4.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7d37aaeb8eb2e46a1f1475b0bda1715d44f6d6c2ca6d6891a1c608e82ed8c87c",
+      "seed": 4,
+      "sha256": "f2fcc92bbc55b5767f0d592cb0d5491fb4c92b711af7fee8d913348f062f19bf"
+    },
+    {
+      "file": "kivi_latency.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": null,
+      "sha256": "6fb9db8c8a54250390ecd3e0bdc197ba5d7e4a0f8eb0cb137f22957717815ce3"
+    },
+    {
+      "file": "latency_robustness.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": 0,
+      "sha256": "61ec5282e05a2578335411bc7d749d72edbb5efa73b93a24be7b484c40d7e915"
+    },
+    {
+      "file": "niah_hard_qwen0.5b_8192.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "68db82e6e795fc808aac4ad0537c0ee5847024b9b050f9b9734b5c1eb3b1de39"
+    },
+    {
+      "file": "niah_hard_qwen7b_8192.json",
+      "model": "Qwen/Qwen2.5-7B",
+      "model_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "52907ff63900e7b46d0f674f35aadc81d3eaa5c200389d7248e6c12cce3f1876"
+    },
+    {
+      "file": "numerical_intervention.json",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": null,
+      "sha256": "ecc0074e0ca59d0c15a26205ef60ecc5786ba3b13b0e1b005638163e2d0e2ac6"
+    },
+    {
+      "file": "oom_qwen7b_16384.json",
+      "model": "Qwen/Qwen2.5-7B",
+      "model_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "7f4078f55e7c6f7365b7ca04d412de49586c52f99f926e2f06446917bdd2c0be"
+    },
+    {
+      "file": "pitfall_qwen0.5b_bf16.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "8ba12071596ad48807fdd8a03f073ec769c638b5c0a337b729847b8bf9df0d2f"
+    },
+    {
+      "file": "pitfall_qwen0.5b_fp16.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "7998c1e5c0a2524837ed6919aa3dc6c900406e73c343a6d517fc6bce91d54399"
+    },
+    {
+      "file": "pitfall_qwen0.5b_fp32.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "89a004a65dc08edd238b703b3097d2777c6441e01892ced777ff06814f31d889"
+    },
+    {
+      "file": "pitfall_qwen1.5b_bf16.json",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "bef545825041eaf4ea5cb130783d8ab2dd9640ae8840fc53278cb986b0b88f5f"
+    },
+    {
+      "file": "pitfall_qwen1.5b_fp16.json",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "7866fe5ef93ee4d85936071b180e500597520ba0c26ca4569a1f2898aedebe58"
+    },
+    {
+      "file": "pitfall_qwen1.5b_fp32.json",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "9d4d1211841345968060836e4bfed20bbe6ae18f1fc33f35167bd672b95ceff7"
+    },
+    {
+      "file": "pitfall_qwen3b_bf16.json",
+      "model": "Qwen/Qwen2.5-3B",
+      "model_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "e33475bb08e35c3b4af09a40ed06ad49cd914db0c39ac2ac0bf49e998d91cd38"
+    },
+    {
+      "file": "pitfall_qwen3b_fp16.json",
+      "model": "Qwen/Qwen2.5-3B",
+      "model_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "de751b6e9ae93921367e4b1c9c93c552aed5a4de71a7da610bb5a3ab738c85da"
+    },
+    {
+      "file": "pitfall_qwen3b_fp32.json",
+      "model": "Qwen/Qwen2.5-3B",
+      "model_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "2f1e2af6d1e800cb4df2a01fc88956de091e9016d734ea20fb691a399c6a4da2"
+    },
+    {
+      "file": "score_shape_sweep.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": 0,
+      "sha256": "6d055a1eb8d779732f691bef08cb09ffed45da7c5600f9442bb78474d190a994"
+    },
+    {
+      "file": "sparse_capacity.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": null,
+      "sha256": "e369af2b610be85ce584bf94f88d530a29610c57be70642542813d77e316ed82"
+    },
+    {
+      "file": "sparse_crossover.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": null,
+      "sha256": "14375ef7e4551d36aea8a95c3b83f3090084c86273f21aa8d9fddc91eca518b6"
+    },
+    {
+      "file": "study_a2_llama3b_16384.json",
+      "model": "meta-llama/Llama-3.2-3B",
+      "model_revision": "13afe5124825b4f3751f836b40dafda64c1ed062",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "67a78ab52b3ec929d699d8f1904bcd85a0cad6d544a9032c234b7d5d4e648334"
+    },
+    {
+      "file": "study_a2_llama3b_16384_sparq16.json",
+      "model": "meta-llama/Llama-3.2-3B",
+      "model_revision": "13afe5124825b4f3751f836b40dafda64c1ed062",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "53730d7f17fa99889b6005485b2e9307b57d9284e5f5cd3aa89d4c244093681e"
+    },
+    {
+      "file": "study_a2_llama3b_16384_sparq32.json",
+      "model": "meta-llama/Llama-3.2-3B",
+      "model_revision": "13afe5124825b4f3751f836b40dafda64c1ed062",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "fc35a9498a17a0e729cb3120b040248af56d34db55cffdd2b8eb274fa9f2165c"
+    },
+    {
+      "file": "study_a2_llama3b_16384_sparq8.json",
+      "model": "meta-llama/Llama-3.2-3B",
+      "model_revision": "13afe5124825b4f3751f836b40dafda64c1ed062",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "024464611782cd9ad376d45b438768bd4d112e80a6e555e32549c8d60c23bf46"
+    },
+    {
+      "file": "study_a2_pareto.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": null,
+      "sha256": "bb54eea023b6df6cb2f262ccd43749a175fe36029eb72287f370b2394bff08bd"
+    },
+    {
+      "file": "study_a2_qwen0.5b_16384.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "bb3165dd0e120cb7f3e784fdacc56cb202e4f61527914358f5ce43a7dd1ec1af"
+    },
+    {
+      "file": "study_a2_qwen0.5b_16384_pg19.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "d941976a1bc13dd8",
+      "seed": 0,
+      "sha256": "bb88957eec6213171a2d254a9b966606b511ac4ddd054e7896c67f09e3ae9292"
+    },
+    {
+      "file": "study_a2_qwen0.5b_16384_quest16.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "b2c9be92474ddfee3b7205d35dd4624ece09db98fd0bc9d7420463d27f48be10"
+    },
+    {
+      "file": "study_a2_qwen0.5b_16384_quest32.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "17cd22a9e763a7c8ea9e3dc7ea22f7c0ec949849c6a75c7a04357d7862c5a5f3"
+    },
+    {
+      "file": "study_a2_qwen0.5b_16384_quest64.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "71e257bcf805293241fd1dd358e0317fec8f4923634af66bec7238e87e2de0bf"
+    },
+    {
+      "file": "study_a2_qwen0.5b_16384_sparq16.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "18290ddd1e6752d17f428f0e14f5e48d4c060734142e13f1028bea409081f6d4"
+    },
+    {
+      "file": "study_a2_qwen0.5b_16384_sparq32.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "4613d75cf13a7e6fd2ce4d2d9cb17198dea264f2ce87b39c0faf9db468430a49"
+    },
+    {
+      "file": "study_a2_qwen0.5b_16384_sparq8.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "3a024808c97879224b7d12ff581bccb7d603d96c6437b652b62e775cf77dd8ac"
+    },
+    {
+      "file": "study_a2_qwen0.5b_32768.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "5beeaa460ee4d8f7fd75913b31a782afca264913c36661655c9e74498d4d32e9"
+    },
+    {
+      "file": "study_a2_qwen0.5b_32768_sparq16.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "5cd9e3d5d2a3018a6fe2c53709d0f81ff566baf647649d6695fa6027ce085e29"
+    },
+    {
+      "file": "study_a2_qwen0.5b_32768_sparq32.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "94e099cfbff8b714b570439a609e245e376093f47189d415eb1a7b4277284a78"
+    },
+    {
+      "file": "study_a2_qwen0.5b_32768_sparq8.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "e68c8edbbd278e4dee27a295cd459694ad6283e5ddd61a2a0734554b2624261c"
+    },
+    {
+      "file": "study_a2_qwen0.5b_8192.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "2795a6b545979c7c67f5bb3514783af53fff276c61a8233aa6f49f2364eb58fe"
+    },
+    {
+      "file": "study_a2_qwen0.5b_8192_sparq16.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "670f3cc0ecc6dc34e45bc94e52b3d38d121ef8284b1ce17dc96ada0b9078c34e"
+    },
+    {
+      "file": "study_a2_qwen0.5b_8192_sparq32.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "e44da5e87b9666d972e44d51144de4c7fadec47ab873bf67384b984e4b55d9e1"
+    },
+    {
+      "file": "study_a2_qwen0.5b_8192_sparq8.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "2026ebaa962cdfafb987c575572937a6f10e17e92d35521cc9b8b43af94efcd3"
+    },
+    {
+      "file": "study_a2_qwen1.5b_16384.json",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "e248c09fb3d6a4ecb227e40c1ff24e42ad372e663770f9e89f0a1968fd76b448"
+    },
+    {
+      "file": "study_a2_qwen1.5b_16384_sparq16.json",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "167cb42d8b039d30a8d46811da427531c6ea57e09fa0c6722599000e48fb9a9f"
+    },
+    {
+      "file": "study_a2_qwen1.5b_16384_sparq32.json",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "996ba7fd97be11df686d33d7f4309546b31e90c1316f75cb9850c630cd1f08b4"
+    },
+    {
+      "file": "study_a2_qwen1.5b_16384_sparq8.json",
+      "model": "Qwen/Qwen2.5-1.5B",
+      "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "67f93df20b060add20307cc30a54efea4313ad2eed889a3dffd9c0071424f4d9"
+    },
+    {
+      "file": "study_a2_qwen3b_16384.json",
+      "model": "Qwen/Qwen2.5-3B",
+      "model_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "8ccfd1c3858e0540810e81e4992a1b4babea71920c6c85a0ce26c99a014d7956"
+    },
+    {
+      "file": "study_a2_qwen3b_16384_sparq16.json",
+      "model": "Qwen/Qwen2.5-3B",
+      "model_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "b29ff036c4bc14ea88a0fa1720a448afc12836f62d2779c0146270c4dc0bfc37"
+    },
+    {
+      "file": "study_a2_qwen3b_16384_sparq32.json",
+      "model": "Qwen/Qwen2.5-3B",
+      "model_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "a876d48b78f196b5c5d4b402a679ac8af5ae23c74708ab6d5010cc4fd9fbb6ce"
+    },
+    {
+      "file": "study_a2_qwen3b_16384_sparq8.json",
+      "model": "Qwen/Qwen2.5-3B",
+      "model_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "ea43b293ab56e427e0e5b7a16129aeb6886db60409961308a7947810208ee856"
+    },
+    {
+      "file": "study_a2_qwen7b_8192.json",
+      "model": "Qwen/Qwen2.5-7B",
+      "model_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+      "dataset_fingerprint": "7ccd6deaa4fc56e5",
+      "seed": 0,
+      "sha256": "d221dc0d2e4353b42e41de960b2b7fea5a505eb0c5f28aa40d0a2dd41cdef873"
+    },
+    {
+      "file": "study_profiling.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": null,
+      "sha256": "425e30ff2b64e53aaa78796f54c721f7dac14f341d7f207e4d77f72a5f079a13"
+    },
+    {
+      "file": "topk_nsys.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": null,
+      "sha256": "244db742a1ab2895b447ea884f7324c9d55f329bb5881d44ec383f9657f71514"
+    },
+    {
+      "file": "unpack_ablation.json",
+      "model": null,
+      "model_revision": null,
+      "dataset_fingerprint": null,
+      "seed": 0,
+      "sha256": "fc7babe12dfbd04f6a32709bbba746628f5fe4a00f816cd8d1ebcfc31e10f699"
+    }
+  ],
+  "commands": [
+    "bash reproduce.sh"
+  ]
+}

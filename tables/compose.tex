@@ -1,0 +1,10 @@
+\begin{tabular}{l l r r r r}
+\toprule
+selection & attend & $k{=}1\%$ & $k{=}2\%$ & $k{=}5\%$ & $k{=}10\%$ \\
+\midrule
+exact-select & bf16 attend & 9.89 & 9.54 & 9.30 & 9.22 \\
+exact-select & fp8 attend & 10.12 & 9.73 & 9.53 & 9.49 \\
+fp8-select & bf16 attend & 9.89 & 9.54 & 9.29 & 9.24 \\
+fp8-select & fp8 attend & 10.16 & 9.72 & 9.41 & 9.34 \\
+\bottomrule
+\end{tabular}

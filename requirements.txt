@@ -1,0 +1,10 @@
+torch==2.11.0
+transformers==5.9.0
+datasets==4.8.4
+triton==3.6.0
+numpy==2.3.5
+matplotlib==3.11.1
+accelerate==1.13.0
+huggingface-hub==1.17.0
+safetensors==0.7.0
+bitsandbytes==0.49.2

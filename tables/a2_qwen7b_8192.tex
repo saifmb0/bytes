@@ -1,0 +1,12 @@
+\begin{tabular}{l r r r}
+\toprule
+selector & B/key & $k{=}1\%$ & $k{=}5\%$ \\
+\midrule
+exact (fp32 score) & 256 & 5.85 & 5.66 \\
+fp8 scalar & 128 & 5.81 & 5.64 \\
+PQ-LUT (PQCache) & 64 & 5.84 & 5.66 \\
+int4 scalar & 64 & 5.88 & 5.63 \\
+sign-VQ (Self-Index.) & 48 & 6.03 & 5.72 \\
+Quest (page) & 32 & 9.23 & 5.95 \\
+\bottomrule
+\end{tabular}

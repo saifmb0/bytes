@@ -1,0 +1,110 @@
+{
+  "schema": "topk_nsys_v1",
+  "profiler": "Nsight Systems",
+  "counter_access": "not required",
+  "rows": [
+    {
+      "S": 4096,
+      "frac": 0.01,
+      "k": 41,
+      "nvtx_range": "paper_target_topk_S4096_k41",
+      "named_kernel_lines": [
+        "78.4            66975          2   33487.5   33487.5     33472     33503         21.9  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "12.5            10656          1   10656.0   10656.0     10656     10656          0.0  void at::native::mbtopk::computeBlockwiseWithinKCounts<unsigned int, float>(T1 *, short *, unsigned\u2026",
+        "8.1             6880          1    6880.0    6880.0      6880      6880          0.0  at::native::mbtopk::computeDigitCumSum(short *, unsigned int *, unsigned int)",
+        "1.1              928          1     928.0     928.0       928       928          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S4096_k41.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S4096_k41.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S4096_k41.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S4096_k41)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     78.4            66975          2   33487.5   33487.5     33472     33503         21.9  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n     12.5            10656          1   10656.0   10656.0     10656     10656          0.0  void at::native::mbtopk::computeBlockwiseWithinKCounts<unsigned int, float>(T1 *, short *, unsigned\u2026\n      8.1             6880          1    6880.0    6880.0      6880      6880          0.0  at::native::mbtopk::computeDigitCumSum(short *, unsigned int *, unsigned int)                       \n      1.1              928          1     928.0     928.0       928       928          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    },
+    {
+      "S": 4096,
+      "frac": 0.05,
+      "k": 205,
+      "nvtx_range": "paper_target_topk_S4096_k205",
+      "named_kernel_lines": [
+        "79.7            78783          2   39391.5   39391.5     37568     41215       2578.8  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "11.8            11616          1   11616.0   11616.0     11616     11616          0.0  void at::native::mbtopk::computeBlockwiseWithinKCounts<unsigned int, float>(T1 *, short *, unsigned\u2026",
+        "7.6             7520          1    7520.0    7520.0      7520      7520          0.0  at::native::mbtopk::computeDigitCumSum(short *, unsigned int *, unsigned int)",
+        "0.9              928          1     928.0     928.0       928       928          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S4096_k205.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S4096_k205.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S4096_k205.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S4096_k205)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     79.7            78783          2   39391.5   39391.5     37568     41215       2578.8  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n     11.8            11616          1   11616.0   11616.0     11616     11616          0.0  void at::native::mbtopk::computeBlockwiseWithinKCounts<unsigned int, float>(T1 *, short *, unsigned\u2026\n      7.6             7520          1    7520.0    7520.0      7520      7520          0.0  at::native::mbtopk::computeDigitCumSum(short *, unsigned int *, unsigned int)                       \n      0.9              928          1     928.0     928.0       928       928          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    },
+    {
+      "S": 4096,
+      "frac": 0.25,
+      "k": 1024,
+      "nvtx_range": "paper_target_topk_S4096_k1024",
+      "named_kernel_lines": [
+        "99.1           131743          1  131743.0  131743.0    131743    131743          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "0.9             1184          1    1184.0    1184.0      1184      1184          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S4096_k1024.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S4096_k1024.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S4096_k1024.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S4096_k1024)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     99.1           131743          1  131743.0  131743.0    131743    131743          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n      0.9             1184          1    1184.0    1184.0      1184      1184          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    },
+    {
+      "S": 8192,
+      "frac": 0.01,
+      "k": 82,
+      "nvtx_range": "paper_target_topk_S8192_k82",
+      "named_kernel_lines": [
+        "99.5           223583          1  223583.0  223583.0    223583    223583          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "0.5             1120          1    1120.0    1120.0      1120      1120          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S8192_k82.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S8192_k82.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S8192_k82.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S8192_k82)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     99.5           223583          1  223583.0  223583.0    223583    223583          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n      0.5             1120          1    1120.0    1120.0      1120      1120          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    },
+    {
+      "S": 8192,
+      "frac": 0.05,
+      "k": 410,
+      "nvtx_range": "paper_target_topk_S8192_k410",
+      "named_kernel_lines": [
+        "99.6           248670          1  248670.0  248670.0    248670    248670          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "0.4             1120          1    1120.0    1120.0      1120      1120          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S8192_k410.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S8192_k410.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S8192_k410.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S8192_k410)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     99.6           248670          1  248670.0  248670.0    248670    248670          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n      0.4             1120          1    1120.0    1120.0      1120      1120          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    },
+    {
+      "S": 8192,
+      "frac": 0.25,
+      "k": 2048,
+      "nvtx_range": "paper_target_topk_S8192_k2048",
+      "named_kernel_lines": [
+        "99.6           286974          1  286974.0  286974.0    286974    286974          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "0.4             1184          1    1184.0    1184.0      1184      1184          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S8192_k2048.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S8192_k2048.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S8192_k2048.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S8192_k2048)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     99.6           286974          1  286974.0  286974.0    286974    286974          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n      0.4             1184          1    1184.0    1184.0      1184      1184          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    },
+    {
+      "S": 16384,
+      "frac": 0.01,
+      "k": 164,
+      "nvtx_range": "paper_target_topk_S16384_k164",
+      "named_kernel_lines": [
+        "99.7           439198          1  439198.0  439198.0    439198    439198          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "0.3             1120          1    1120.0    1120.0      1120      1120          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S16384_k164.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S16384_k164.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S16384_k164.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S16384_k164)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     99.7           439198          1  439198.0  439198.0    439198    439198          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n      0.3             1120          1    1120.0    1120.0      1120      1120          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    },
+    {
+      "S": 16384,
+      "frac": 0.05,
+      "k": 819,
+      "nvtx_range": "paper_target_topk_S16384_k819",
+      "named_kernel_lines": [
+        "99.8           486077          1  486077.0  486077.0    486077    486077          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "0.2             1152          1    1152.0    1152.0      1152      1152          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S16384_k819.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S16384_k819.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S16384_k819.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S16384_k819)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     99.8           486077          1  486077.0  486077.0    486077    486077          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n      0.2             1152          1    1152.0    1152.0      1152      1152          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    },
+    {
+      "S": 16384,
+      "frac": 0.25,
+      "k": 4096,
+      "nvtx_range": "paper_target_topk_S16384_k4096",
+      "named_kernel_lines": [
+        "99.8           487549          1  487549.0  487549.0    487549    487549          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026",
+        "0.2             1184          1    1184.0    1184.0      1184      1184          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)"
+      ],
+      "raw_report": "Generating SQLite file /tmp/topk_nsys_1rbm1c6d/topk_S16384_k4096.sqlite from /tmp/topk_nsys_1rbm1c6d/topk_S16384_k4096.nsys-rep\nProcessing [/tmp/topk_nsys_1rbm1c6d/topk_S16384_k4096.sqlite] with [/home/202311016/.conda/envs/saif/nsight-compute/2024.1.1/host/target-linux-x64/reports/cuda_gpu_kern_sum.py](nvtx=paper_target_topk_S16384_k4096)... \n\n ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):\n\n Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                \n --------  ---------------  ---------  --------  --------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------\n     99.8           487549          1  487549.0  487549.0    487549    487549          0.0  void at::native::mbtopk::computeBlockDigitCounts<float, unsigned int, unsigned int, (int)2>(at::cud\u2026\n      0.2             1184          1    1184.0    1184.0      1184      1184          0.0  void at::native::mbtopk::fill<unsigned int, unsigned int>(T1 *, T1, T2)                             \n\n"
+    }
+  ]
+}

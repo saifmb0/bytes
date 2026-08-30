@@ -1,0 +1,14 @@
+\begin{tabular}{l c c r r}
+\toprule
+selector & score representation & selection unit & PPL & $\Delta$PPL \\
+\midrule
+exact keys & fp32 score, 128 B/key & key & 9.30 & +0.13 \\
+fp8 scalar & fp8, 64 B/key & key & 9.29 & +0.12 \\
+PQ-LUT & PQ indices, 32 B/key & key & 9.31 & +0.14 \\
+int4 scalar & int4, 32 B/key & key & 9.34 & +0.17 \\
+sign-VQ & sign-VQ, 24 B/key & key & 9.52 & +0.35 \\
+int2 scalar & int2, 16 B/key & key & 9.59 & +0.42 \\
+Quest & bounds, 16 B/key & page & 9.99 & +0.82 \\
+H2O & no per-step scan & eviction & 12.50 & +3.33 \\
+\bottomrule
+\end{tabular}

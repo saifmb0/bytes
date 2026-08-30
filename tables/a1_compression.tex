@@ -1,0 +1,17 @@
+\begin{tabular}{l r r}
+\toprule
+method & key bpw & Wikitext-2 PPL \\
+\midrule
+FP16 (reference) & 16.0 & 18.50 \\
+\midrule
+KIVI-4 & 4.75 & 18.62 \\
+KVQuant-4 & 4.32 & 19.52$\pm$0.13 \\
+PQ + outlier isolation & 4.25 & 19.97$\pm$0.30 \\
+plain PQ (no rot.) & 4.00 & 19.42$\pm$0.26 \\
+KVQuant-3 & 3.32 & 21.50$\pm$0.27 \\
+KIVI-2 & 2.88 & 25.22 \\
+KVQuant-2 & 2.32 & 31.40$\pm$0.69 \\
+TurboQuant & 4.00 & 18.54$\pm$0.04 \\
+TurboQuant-QJL & 9.25 & 18.56$\pm$0.04 \\
+\bottomrule
+\end{tabular}

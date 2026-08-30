@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "description": "KIVI decode-attention latency using KIVI's official CUDA kernel (kivi_gemv.gemv_forward_cuda_outer_dim via quant.matmul.cuda_bmm_fA_qB_outer), built for sm89 (RTX 4000 Ada). Measured operating point B=32, S=16384, D=128, H_q=64, H_k=8, fp16, CUDA graphs (20 warmup / 200 runs). Complete measured attention step: Q@Kq (KIVI kernel) + Q@Kfull (fp16 residual window) + softmax + P@Vq (KIVI kernel) + P@Vfull (fp16 residual). KIVI key=per-channel INT (quantized along token axis, group_size groups); value=per-token INT; full-precision residual window of the most recent `residual_length` tokens. All compared methods time attention over an already-populated cache; the O(1) per-step cache append is excluded for every method.",
+    "integrity_gate": "PASS \u2014 cuda_bmm_fA_qB_outer validated against a full fp16-dequant matmul reference at a small GQA shape: 4-bit rel-err 4.67e-03, 2-bit rel-err 4.58e-03 (both < 1%).",
+    "harness": "benchmarks/kivi_latency.py",
+    "kivi_repo": "https://github.com/jy-yuan/KIVI.git @ 876b4d2d08e3b1d5f70d0969c299d8c7c42ddfb6",
+    "bpw_conventions": "eff_key_bpw_full counts per-group scale+mn (2*16/group_size) + residual FP16 share (16*W/S), including all storage overhead. eff_key_bpw_harness omits scale+mn (bits*(S-W)/S + 16*W/S), matching the convention KIVIQuantizer.bpw() uses on the PPL panel. Both are reported; quality and latency panels must state which convention they use."
+  },
+  "KIVI-4": {
+    "k_bits": 4,
+    "v_bits": 4,
+    "group_size": 32,
+    "residual_length": 128,
+    "eff_key_bpw_full": 5.086,
+    "eff_key_bpw_harness": 4.094,
+    "lat_ms": 7.783,
+    "peak_gb": 5.18,
+    "B": 32,
+    "S": 16384,
+    "D": 128,
+    "H_q": 64,
+    "H_k": 8
+  },
+  "KIVI-2": {
+    "k_bits": 2,
+    "v_bits": 2,
+    "group_size": 32,
+    "residual_length": 128,
+    "eff_key_bpw_full": 3.102,
+    "eff_key_bpw_harness": 2.109,
+    "lat_ms": 6.069,
+    "peak_gb": 4.81,
+    "B": 32,
+    "S": 16384,
+    "D": 128,
+    "H_q": 64,
+    "H_k": 8
+  }
+}

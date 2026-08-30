@@ -1,0 +1,18 @@
+\begin{tabular}{l r r r r r}
+\toprule
+selector & B/key & $k{=}1\%$ & $k{=}2\%$ & $k{=}5\%$ & $k{=}10\%$ \\
+\midrule
+exact (fp32 score) & 256 & 6.16 & 6.02 & 5.94 & 5.91 \\
+fp8 scalar & 128 & 6.17 & 6.02 & 5.94 & 5.90 \\
+PQ-LUT (PQCache) & 64 & 6.16 & 6.02 & 5.94 & 5.91 \\
+int4 scalar & 64 & 6.19 & 6.04 & 5.95 & 5.92 \\
+sign-VQ (Self-Index.) & 48 & 6.25 & 6.11 & 6.00 & 5.95 \\
+int2 scalar & 32 & 6.38 & 6.15 & 6.01 & 5.94 \\
+SparQ $r{=}8$ & 16 & 6.73 & 6.33 & 6.08 & 5.95 \\
+SparQ $r{=}16$ & 32 & 6.34 & 6.11 & 5.96 & 5.91 \\
+SparQ $r{=}32$ & 64 & 6.20 & 6.04 & 5.94 & 5.91 \\
+Quest (page) & 32 & 29.10 & 13.44 & 11.31 & 7.83 \\
+H2O (evict) & evict & 9.99 & 9.02 & 7.73 & 7.06 \\
+SnapKV (evict) & evict & 11.06 & 9.66 & 7.90 & 7.16 \\
+\bottomrule
+\end{tabular}

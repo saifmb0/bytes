@@ -1,0 +1,11 @@
+\begin{tabular}{l r r r r}
+\toprule
+model & max $|k|$ & exact (bf16) & exact (fp16) & exact (fp32) \\
+ & & \multicolumn{3}{c}{PPL @ $k{=}10\%$, dense in text} \\
+\midrule
+Qwen2.5-0.5B & 221 & 9.13 & 9.11 & 9.11 \\
+Qwen2.5-1.5B & 326 & 8.00 & \textbf{NaN}$^{\dagger}$ & 6.75 \\
+Qwen2.5-3B & 96 & 5.92 & 5.90 & 5.91 \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize $^{\dagger}$fp16 dot products contain nonfinite values; see released score diagnostics.} \\
+\end{tabular}
